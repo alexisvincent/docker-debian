@@ -13,7 +13,7 @@ MAINTAINER Alexis Vincent "alexisjohnvincent@gmail.com"
 RUN \
   apt-get update && \
   apt-get install -y git wget && \
-  sudo apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+  apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Set environment variables.
 ENV HOME /root
